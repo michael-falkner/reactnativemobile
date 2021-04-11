@@ -41,7 +41,7 @@ class About extends Component {
             );
         };
         return (
-            <ScrollView>
+            <ScrollView style={{backgroundColor:'#e9e9ef'}}>
                 <Mission />
                     <Card title='Community Partners'>
                         <FlatList

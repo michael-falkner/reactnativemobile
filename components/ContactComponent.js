@@ -15,7 +15,7 @@ render() {
     const { navigate } = this.props.navigation;
 
     return (
-        <ScrollView>
+        <ScrollView style={{backgroundColor:'#e9e9ef'}}>
             <Card 
             title='Contact Us'
             wrapperStyle={{margin: 20}}
