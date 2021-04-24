@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import { Card, Text } from 'react-native-elements';
+import * as Animatable from 'react-native-animatable';
+
 
 class Contact extends Component {
 
@@ -15,7 +17,8 @@ render() {
     const { navigate } = this.props.navigation;
 
     return (
-        <ScrollView style={{backgroundColor:'#e9e9ef'}}>
+        <ScrollView>
+            <Animatable.View animation="fadeInDown" duration={2000} delay={1000}>
             <Card 
             title='Contact Us'
             wrapperStyle={{margin: 20}}
@@ -27,6 +30,7 @@ render() {
                 <Text>Email: campsites@nucamp.co</Text>
 
             </Card>
+            </Animatable.View>
         </ScrollView>
             );
 }
